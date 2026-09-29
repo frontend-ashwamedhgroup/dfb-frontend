@@ -1,0 +1,836 @@
+/* =========================================================
+   PAGE
+========================================================= */
+
+.submission-details-page {
+  min-height: 100vh;
+  display: flex;
+  background: #f5f7fb;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.submission-details-main {
+  flex: 1;
+  min-width: 0;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.submission-details-header {
+  height: 82px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 38px;
+
+  background: #ffffff;
+
+  border-bottom:
+    1px solid #e8edf3;
+}
+
+
+.submission-header-title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+.submission-header-title span {
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.8px;
+
+  color: var(--domain-accent);
+}
+
+
+.submission-header-title strong {
+  font-size: 18px;
+
+  color: #1e293b;
+}
+
+
+/* =========================================================
+   USER HEADER
+========================================================= */
+
+.submission-header-user {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+}
+
+
+.header-user-avatar {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    var(--domain-accent);
+
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+.header-user-info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+
+.header-user-info strong {
+  font-size: 14px;
+
+  color: #1e293b;
+}
+
+
+.header-user-info span {
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  color: #94a3b8;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.submission-details-content {
+  flex: 1;
+
+  padding: 36px;
+
+  overflow-y: auto;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.submission-details-card {
+  width: 100%;
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  padding: 34px;
+
+  background: #ffffff;
+
+  border:
+    1px solid #e8edf3;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 10px 35px
+    rgba(15, 23, 42, 0.06);
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.submission-back-button {
+  border: none;
+
+  background: transparent;
+
+  padding: 0;
+
+  margin-bottom: 28px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #64748b;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease;
+}
+
+
+.submission-back-button:hover {
+  color:
+    var(--domain-accent);
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.submission-details-title {
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+}
+
+
+.submission-visit-icon {
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  background:
+    var(--domain-light);
+
+  font-size: 30px;
+}
+
+
+.submission-domain-label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  color:
+    var(--domain-accent);
+}
+
+
+.submission-details-title h1 {
+  margin: 0;
+
+  font-size: 27px;
+
+  color: #1e293b;
+}
+
+
+.submission-details-title p {
+  margin:
+    7px 0 0;
+
+  font-size: 14px;
+
+  color: #64748b;
+}
+
+
+/* =========================================================
+   SUCCESS STATUS
+========================================================= */
+
+.submission-status-banner {
+  margin-top: 30px;
+
+  padding: 17px 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  background:
+    var(--domain-light);
+
+  border:
+    1px solid
+    rgba(0, 0, 0, 0.04);
+
+  border-radius: 14px;
+}
+
+
+.submission-status-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    var(--domain-accent);
+
+  color: #ffffff;
+
+  font-weight: 800;
+}
+
+
+.submission-status-banner div:last-child {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+
+.submission-status-banner strong {
+  font-size: 14px;
+
+  color: #1e293b;
+}
+
+
+.submission-status-banner span {
+  font-size: 13px;
+
+  color: #64748b;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.submission-details-divider {
+  height: 1px;
+
+  margin: 30px 0;
+
+  background:
+    #e8edf3;
+}
+
+
+/* =========================================================
+   DATA SECTION
+========================================================= */
+
+.submitted-data-section {
+  width: 100%;
+}
+
+
+.submitted-data-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 22px;
+}
+
+
+.submitted-data-heading h2 {
+  margin: 0;
+
+  font-size: 19px;
+
+  color: #1e293b;
+}
+
+
+.submitted-data-heading span {
+  padding:
+    6px 11px;
+
+  border-radius: 20px;
+
+  background:
+    #f1f5f9;
+
+  color:
+    #64748b;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  text-transform:
+    uppercase;
+
+  letter-spacing:
+    0.6px;
+}
+
+
+/* =========================================================
+   FIELDS GRID
+========================================================= */
+
+.submitted-fields-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(0, 1fr)
+    );
+
+  gap: 18px;
+}
+
+
+.submitted-field {
+  padding:
+    18px;
+
+  border:
+    1px solid #e8edf3;
+
+  border-radius:
+    12px;
+
+  background:
+    #ffffff;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.submitted-field:hover {
+  border-color:
+    var(--domain-accent);
+
+  box-shadow:
+    0 6px 18px
+    rgba(15, 23, 42, 0.05);
+}
+
+
+.submitted-field-label {
+  display: block;
+
+  margin-bottom:
+    8px;
+
+  font-size:
+    12px;
+
+  font-weight:
+    700;
+
+  color:
+    #64748b;
+}
+
+
+.submitted-field-value {
+  font-size:
+    15px;
+
+  font-weight:
+    600;
+
+  color:
+    #1e293b;
+
+  word-break:
+    break-word;
+
+  line-height:
+    1.5;
+}
+
+
+/* =========================================================
+   NO DATA
+========================================================= */
+
+.no-submitted-data {
+  grid-column:
+    1 / -1;
+
+  padding:
+    40px;
+
+  text-align:
+    center;
+
+  border:
+    1px dashed #cbd5e1;
+
+  border-radius:
+    12px;
+
+  color:
+    #64748b;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.submission-details-actions {
+  margin-top:
+    34px;
+
+  padding-top:
+    25px;
+
+  border-top:
+    1px solid #e8edf3;
+
+  display:
+    flex;
+
+  justify-content:
+    flex-end;
+}
+
+
+.back-to-submissions-button {
+  border:
+    none;
+
+  padding:
+    12px 20px;
+
+  border-radius:
+    9px;
+
+  background:
+    var(--domain-accent);
+
+  color:
+    #ffffff;
+
+  font-size:
+    14px;
+
+  font-weight:
+    700;
+
+  cursor:
+    pointer;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+
+.back-to-submissions-button:hover {
+  transform:
+    translateY(-1px);
+
+  opacity:
+    0.92;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.submission-loading {
+  flex: 1;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  gap:
+    15px;
+
+  color:
+    #64748b;
+}
+
+
+.loading-spinner {
+  width:
+    38px;
+
+  height:
+    38px;
+
+  border:
+    4px solid #e2e8f0;
+
+  border-top-color:
+    var(--domain-accent);
+
+  border-radius:
+    50%;
+
+  animation:
+    submission-spin 0.8s linear infinite;
+}
+
+
+@keyframes submission-spin {
+
+  to {
+
+    transform:
+      rotate(360deg);
+
+  }
+
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.submission-details-error-page {
+  width:
+    100%;
+
+  min-height:
+    100vh;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  gap:
+    12px;
+}
+
+
+.submission-details-error-card {
+  width:
+    100%;
+
+  max-width:
+    450px;
+
+  margin:
+    auto;
+
+  padding:
+    40px;
+
+  text-align:
+    center;
+
+  background:
+    #ffffff;
+
+  border:
+    1px solid #e8edf3;
+
+  border-radius:
+    18px;
+
+  box-shadow:
+    0 10px 35px
+    rgba(15, 23, 42, 0.06);
+}
+
+
+.details-error-icon {
+  width:
+    52px;
+
+  height:
+    52px;
+
+  margin:
+    0 auto 15px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  border-radius:
+    50%;
+
+  background:
+    #fee2e2;
+
+  color:
+    #dc2626;
+
+  font-size:
+    24px;
+
+  font-weight:
+    800;
+}
+
+
+.submission-details-error-card h2 {
+  margin:
+    0 0 10px;
+
+  color:
+    #1e293b;
+}
+
+
+.submission-details-error-card p {
+  color:
+    #64748b;
+
+  margin:
+    0 0 22px;
+}
+
+
+.submission-details-error-card button,
+.submission-details-error-page button {
+  border:
+    none;
+
+  padding:
+    12px 20px;
+
+  border-radius:
+    9px;
+
+  background:
+    var(--domain-accent);
+
+  color:
+    #ffffff;
+
+  font-weight:
+    700;
+
+  cursor:
+    pointer;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (
+  max-width: 900px
+) {
+
+  .submitted-fields-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+}
+
+
+@media (
+  max-width: 700px
+) {
+
+  .submission-details-page {
+    display:
+      block;
+  }
+
+
+  .dashboard-sidebar {
+    display:
+      none;
+  }
+
+
+  .submission-details-header {
+    height:
+      auto;
+
+    padding:
+      18px 20px;
+  }
+
+
+  .header-user-info {
+    display:
+      none;
+  }
+
+
+  .submission-details-content {
+    padding:
+      20px;
+  }
+
+
+  .submission-details-card {
+    padding:
+      22px;
+  }
+
+
+  .submission-details-title h1 {
+    font-size:
+      22px;
+  }
+
+
+  .submission-details-actions {
+    justify-content:
+      stretch;
+  }
+
+
+  .back-to-submissions-button {
+    width:
+      100%;
+  }
+
+}

@@ -1,0 +1,809 @@
+/* =====================================================
+   MY SUBMISSIONS PAGE
+===================================================== */
+
+.submissions-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 36px;
+  box-sizing: border-box;
+  background: #f5f7fb;
+}
+
+
+/* =====================================================
+   PAGE HEADER
+===================================================== */
+
+.submissions-page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+
+.submissions-page-header h1 {
+  margin: 0;
+  color: #263746;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+.submissions-page-header p {
+  margin: 8px 0 0;
+  color: #667085;
+  font-size: 15px;
+}
+
+
+.submissions-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+
+.back-dashboard-button {
+  min-height: 44px;
+  padding: 0 24px;
+  border: none;
+  border-radius: 8px;
+  background: #176b58;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+
+.back-dashboard-button:hover {
+  background: #115645;
+}
+
+
+/* =====================================================
+   FILTER CARD
+===================================================== */
+
+.submissions-filter-card {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  flex-wrap: wrap;
+
+  padding: 26px;
+
+  margin-bottom: 22px;
+
+  border: 1px solid #dde3eb;
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 4px 16px
+    rgba(
+      15,
+      23,
+      42,
+      0.05
+    );
+}
+
+
+/* =====================================================
+   FILTER GROUP
+===================================================== */
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+.filter-group label {
+  color: #435363;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.search-group {
+  flex: 1;
+  min-width: 280px;
+}
+
+
+.search-input-wrapper {
+  display: flex;
+  align-items: center;
+
+  height: 46px;
+
+  padding: 0 15px;
+
+  border: 1px solid #cfd8e3;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  transition: 0.2s ease;
+}
+
+
+.search-input-wrapper:focus-within {
+  border-color: #176b58;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(
+      23,
+      107,
+      88,
+      0.1
+    );
+}
+
+
+.search-input-wrapper span {
+  font-size: 16px;
+}
+
+
+.search-input-wrapper input {
+  width: 100%;
+  height: 100%;
+
+  padding: 0 0 0 10px;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #334155;
+
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   DATE AND SELECT FILTERS
+===================================================== */
+
+.filter-group input[type="date"],
+.filter-group select {
+  min-width: 150px;
+  height: 46px;
+
+  padding: 0 14px;
+
+  border: 1px solid #cfd8e3;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: #334155;
+
+  font-size: 14px;
+
+  box-sizing: border-box;
+
+  transition: 0.2s ease;
+}
+
+
+.filter-group input[type="date"]:focus,
+.filter-group select:focus {
+  outline: none;
+
+  border-color: #176b58;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(
+      23,
+      107,
+      88,
+      0.1
+    );
+}
+
+
+/* =====================================================
+   CLEAR FILTER BUTTON
+===================================================== */
+
+.clear-filter-button {
+  height: 46px;
+
+  padding: 0 22px;
+
+  border: 1px solid #cfd8e3;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: #435363;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.clear-filter-button:hover {
+  border-color: #176b58;
+  color: #176b58;
+}
+
+
+/* =====================================================
+   VISIT TYPE CARD
+===================================================== */
+
+.visit-type-tabs-card {
+  margin-bottom: 24px;
+
+  padding: 26px;
+
+  border: 1px solid #dde3eb;
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 4px 16px
+    rgba(
+      15,
+      23,
+      42,
+      0.05
+    );
+}
+
+
+.visit-type-tabs-header h3 {
+  margin: 0;
+
+  color: #263746;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+.visit-type-tabs-header p {
+  margin: 7px 0 0;
+
+  color: #667085;
+
+  font-size: 14px;
+}
+
+
+.visit-type-tabs {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+
+  margin-top: 18px;
+}
+
+
+/* =====================================================
+   VISIT TYPE BUTTONS
+===================================================== */
+
+.visit-type-tab {
+  min-height: 42px;
+
+  padding: 0 20px;
+
+  border: 1px solid #cfd8e3;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: #435363;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.visit-type-tab:hover {
+  border-color: #176b58;
+}
+
+
+.visit-type-tab.active {
+  border-color: #176b58;
+
+  background: #176b58;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 5px 12px
+    rgba(
+      23,
+      107,
+      88,
+      0.2
+    );
+}
+
+
+/* =====================================================
+   TABLE CARD
+===================================================== */
+
+.submissions-table-card {
+  overflow: hidden;
+
+  border: 1px solid #dde3eb;
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 4px 16px
+    rgba(
+      15,
+      23,
+      42,
+      0.05
+    );
+}
+
+
+/* =====================================================
+   TABLE HEADER
+===================================================== */
+
+.table-card-header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 26px;
+
+  border-bottom:
+    1px solid #e5e9ef;
+}
+
+
+.table-card-header h2 {
+  margin: 0;
+
+  color: #263746;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.table-card-header p {
+  margin: 8px 0 0;
+
+  color: #667085;
+
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   EXPORT EXCEL BUTTON
+===================================================== */
+
+.export-excel-button {
+  min-height: 44px;
+
+  padding: 0 20px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: #176b58;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.export-excel-button:hover:not(:disabled) {
+  background: #115645;
+}
+
+
+.export-excel-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+
+.submissions-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 800px;
+}
+
+
+.submissions-table thead {
+  background: #f7f9fc;
+}
+
+
+.submissions-table th {
+  padding: 16px 18px;
+
+  border-bottom:
+    1px solid #dde3eb;
+
+  color: #586777;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  text-align: left;
+
+  white-space: nowrap;
+}
+
+
+.submissions-table td {
+  padding: 17px 18px;
+
+  border-bottom:
+    1px solid #edf0f4;
+
+  color: #425466;
+
+  font-size: 14px;
+
+  white-space: nowrap;
+}
+
+
+.submission-row {
+  transition: 0.15s ease;
+}
+
+
+.submission-row:hover {
+  background: #f8fbfa;
+}
+
+
+.submissions-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+
+/* =====================================================
+   TABLE LOADING
+===================================================== */
+
+.submissions-table-loading {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 260px;
+
+  gap: 15px;
+
+  color: #667085;
+}
+
+
+/* =====================================================
+   PAGE LOADING
+===================================================== */
+
+.submissions-loading {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 70vh;
+
+  gap: 16px;
+
+  color: #667085;
+}
+
+
+/* =====================================================
+   SPINNER
+===================================================== */
+
+.submissions-spinner {
+  width: 38px;
+  height: 38px;
+
+  border: 4px solid #dce8e5;
+
+  border-top-color: #176b58;
+
+  border-radius: 50%;
+
+  animation:
+    submissions-spin
+    0.8s
+    linear
+    infinite;
+}
+
+
+@keyframes submissions-spin {
+
+  from {
+
+    transform:
+      rotate(
+        0deg
+      );
+
+  }
+
+
+  to {
+
+    transform:
+      rotate(
+        360deg
+      );
+
+  }
+
+}
+
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.empty-submissions {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 280px;
+
+  padding: 40px;
+
+  text-align: center;
+}
+
+
+.empty-icon {
+  font-size: 42px;
+  margin-bottom: 14px;
+}
+
+
+.empty-submissions h3 {
+  margin: 0;
+
+  color: #263746;
+
+  font-size: 19px;
+}
+
+
+.empty-submissions p {
+  margin: 10px 0 22px;
+
+  color: #667085;
+
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   ERROR STATE
+===================================================== */
+
+.submissions-error {
+  max-width: 600px;
+
+  margin: 80px auto;
+
+  padding: 35px;
+
+  border: 1px solid #f0caca;
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  text-align: center;
+}
+
+
+.submissions-error h2 {
+  margin-top: 0;
+  color: #b42318;
+}
+
+
+.submissions-error p {
+  color: #667085;
+}
+
+
+.error-actions {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 14px;
+
+  margin-top: 24px;
+}
+
+
+.error-actions button {
+  min-height: 42px;
+
+  padding: 0 20px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #176b58;
+
+  color: #ffffff;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+@media (
+  max-width: 1100px
+) {
+
+  .submissions-page {
+    padding: 24px;
+  }
+
+
+  .submissions-filter-card {
+    align-items: stretch;
+  }
+
+
+  .search-group {
+    flex-basis: 100%;
+  }
+
+}
+
+
+@media (
+  max-width: 768px
+) {
+
+  .submissions-page {
+    padding: 18px;
+  }
+
+
+  .submissions-page-header {
+    flex-direction: column;
+  }
+
+
+  .submissions-header-actions {
+    width: 100%;
+  }
+
+
+  .back-dashboard-button {
+    flex: 1;
+  }
+
+
+  .submissions-filter-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+
+  .filter-group {
+    width: 100%;
+  }
+
+
+  .filter-group input[type="date"],
+  .filter-group select {
+    width: 100%;
+  }
+
+
+  .clear-filter-button {
+    width: 100%;
+  }
+
+
+  .table-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  .export-excel-button {
+    width: 100%;
+  }
+
+
+  .visit-type-tabs-card {
+    padding: 20px;
+  }
+
+
+  .submissions-filter-card {
+    padding: 20px;
+  }
+
+}
+

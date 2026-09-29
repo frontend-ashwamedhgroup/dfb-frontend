@@ -1,0 +1,575 @@
+/* =========================================================
+   PAGE
+========================================================= */
+
+.create-form-page {
+  min-height: 100vh;
+  padding: 32px;
+  background: #f6f8fb;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.create-form-header {
+  max-width: 1100px;
+  margin: 0 auto 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 24px;
+}
+
+
+.create-form-page-label {
+  margin-bottom: 6px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+
+  color: #667085;
+}
+
+
+.create-form-header h1 {
+  margin: 0;
+
+  font-size: 32px;
+  font-weight: 700;
+
+  color: #101828;
+}
+
+
+.create-form-header p {
+  margin: 8px 0 0;
+
+  color: #667085;
+  font-size: 15px;
+}
+
+
+.create-form-back-button {
+  padding: 11px 18px;
+
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #344054;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+
+.create-form-back-button:hover {
+  background: #f9fafb;
+}
+
+
+.create-form-back-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.create-form-error {
+  max-width: 1100px;
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 16px;
+
+  border: 1px solid #fecdca;
+  border-radius: 8px;
+
+  background: #fef3f2;
+
+  color: #b42318;
+
+  font-size: 14px;
+}
+
+
+.create-form-error > span {
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fecdca;
+
+  font-weight: 700;
+}
+
+
+.create-form-error div {
+  flex: 1;
+}
+
+
+.create-form-error button {
+  border: none;
+  background: transparent;
+
+  color: #b42318;
+
+  font-size: 22px;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.create-form-card {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #eaecf0;
+  border-radius: 12px;
+
+  box-shadow:
+    0 2px 6px rgba(16, 24, 40, 0.05);
+}
+
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.create-form-card-header {
+  padding: 26px 30px;
+
+  border-bottom: 1px solid #eaecf0;
+}
+
+
+.create-form-section-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+
+  color: #667085;
+}
+
+
+.create-form-card-header h2 {
+  margin: 6px 0 4px;
+
+  font-size: 21px;
+  color: #101828;
+}
+
+
+.create-form-card-header p {
+  margin: 0;
+
+  color: #667085;
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+.create-form-card-body {
+  padding: 30px;
+}
+
+
+.create-form-group {
+  margin-bottom: 26px;
+}
+
+
+.create-form-group:last-child {
+  margin-bottom: 0;
+}
+
+
+.create-form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #344054;
+}
+
+
+.create-form-group label > span {
+  margin-left: 4px;
+
+  color: #d92d20;
+}
+
+
+.create-form-group input[type="text"],
+.create-form-group select,
+.create-form-group textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 12px 13px;
+
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #101828;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition: border-color 0.2s,
+              box-shadow 0.2s;
+}
+
+
+.create-form-group input[type="text"]:focus,
+.create-form-group select:focus,
+.create-form-group textarea:focus {
+  border-color: #7f56d9;
+
+  box-shadow:
+    0 0 0 3px rgba(127, 86, 217, 0.12);
+}
+
+
+.create-form-group input:disabled,
+.create-form-group select:disabled,
+.create-form-group textarea:disabled {
+  background: #f2f4f7;
+
+  cursor: not-allowed;
+}
+
+
+.create-form-group textarea {
+  resize: vertical;
+
+  min-height: 120px;
+
+  font-family: inherit;
+}
+
+
+.create-form-group small {
+  display: block;
+
+  margin-top: 6px;
+
+  color: #667085;
+
+  font-size: 12px;
+}
+
+
+.create-form-help {
+  margin-top: -3px !important;
+  margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   VISIT TYPES
+========================================================= */
+
+.create-form-visit-types {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 10px;
+}
+
+
+.create-form-visit-option {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 13px 15px;
+
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+
+.create-form-visit-option:hover {
+  background: #f9fafb;
+  border-color: #98a2b3;
+}
+
+
+.create-form-visit-option.selected {
+  border-color: #7f56d9;
+
+  background: #f9f5ff;
+}
+
+
+.create-form-visit-option input {
+  position: absolute;
+
+  opacity: 0;
+
+  pointer-events: none;
+}
+
+
+.create-form-checkbox {
+  width: 19px;
+  height: 19px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1.5px solid #98a2b3;
+  border-radius: 5px;
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+.create-form-visit-option.selected
+.create-form-checkbox {
+  border-color: #7f56d9;
+
+  background: #7f56d9;
+}
+
+
+.create-form-visit-name {
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #344054;
+}
+
+
+/* =========================================================
+   EMPTY VISIT TYPES
+========================================================= */
+
+.create-form-selection-empty {
+  padding: 16px;
+
+  border: 1px dashed #d0d5dd;
+  border-radius: 8px;
+
+  background: #f9fafb;
+
+  color: #667085;
+
+  font-size: 14px;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.create-form-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 20px 30px;
+
+  border-top: 1px solid #eaecf0;
+
+  background: #fcfcfd;
+}
+
+
+.create-form-cancel,
+.create-form-submit {
+  min-width: 130px;
+
+  padding: 11px 18px;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+
+.create-form-cancel {
+  border: 1px solid #d0d5dd;
+
+  background: #ffffff;
+
+  color: #344054;
+}
+
+
+.create-form-cancel:hover {
+  background: #f9fafb;
+}
+
+
+.create-form-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  border: 1px solid #7f56d9;
+
+  background: #7f56d9;
+
+  color: #ffffff;
+}
+
+
+.create-form-submit:hover {
+  background: #6941c6;
+}
+
+
+.create-form-cancel:disabled,
+.create-form-submit:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   SPINNER
+========================================================= */
+
+.create-form-spinner {
+  width: 15px;
+  height: 15px;
+
+  border: 2px solid rgba(255, 255, 255, 0.45);
+
+  border-top-color: #ffffff;
+
+  border-radius: 50%;
+
+  animation:
+    create-form-spin 0.7s linear infinite;
+}
+
+
+@keyframes create-form-spin {
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .create-form-page {
+    padding: 20px;
+  }
+
+
+  .create-form-header {
+    flex-direction: column;
+  }
+
+
+  .create-form-header h1 {
+    font-size: 27px;
+  }
+
+
+  .create-form-card-body,
+  .create-form-card-header {
+    padding: 22px;
+  }
+
+
+  .create-form-visit-types {
+    grid-template-columns: 1fr;
+  }
+
+
+  .create-form-footer {
+    padding: 18px 22px;
+
+    flex-direction: column-reverse;
+
+    align-items: stretch;
+  }
+
+
+  .create-form-cancel,
+  .create-form-submit {
+    width: 100%;
+  }
+
+}
